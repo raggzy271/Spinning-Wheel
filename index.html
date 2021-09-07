@@ -129,11 +129,11 @@
         <ul id="schools">
             <li class="school">SJCS <img src="img/remove.png" alt="" class="remove-school"></li>
             <li class="school">SJA <img src="img/remove.png" alt="" class="remove-school"></li>
+            <li class="school">SGC <img src="img/remove.png" alt="" class="remove-school"></li>
             <li class="school">MIS <img src="img/remove.png" alt="" class="remove-school"></li>
             <li class="school">WAS <img src="img/remove.png" alt="" class="remove-school"></li>
             <li class="school">CJM <img src="img/remove.png" alt="" class="remove-school"></li>
             <li class="school">KJ <img src="img/remove.png" alt="" class="remove-school"></li>
-            <li class="school">SGC <img src="img/remove.png" alt="" class="remove-school"></li>
         </ul>
     </div>
     <script>
@@ -276,7 +276,9 @@
             }
 
             spin.addEventListener('click', () => {
-                angularAcceleration = 360 + .4 * 12 * 30;
+                angularAcceleration = 360 + .6 * 12 * 30;
+                var spinningSound = new Audio('Spinning Prize Wheel Sound Effect.mp3');
+                spinningSound.play();
                 spinTheWheel();
             });
 
